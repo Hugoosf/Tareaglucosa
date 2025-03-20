@@ -1,0 +1,322 @@
+/* Estilos generales para la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Un fondo claro y agradable */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    color: #333;
+}
+
+/* Encabezado */
+h2 {
+    text-align: center;
+    color: #1e3d58; /* Azul oscuro */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+/* Estilo del formulario */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Ancho máximo para que no se extienda demasiado */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos dentro del formulario */
+    margin: 20px auto; /* Centrado horizontal y un poco de espacio alrededor */
+}
+
+/* Estilo de las etiquetas */
+label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #2c3e50;
+    text-align: center; /* Alineación centrada de las etiquetas */
+    width: 100%; /* Asegura que las etiquetas ocupen todo el ancho */
+}
+
+/* Estilo de los inputs */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"] {
+    width: 80%; /* Los inputs ocupan el 80% del formulario */
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f7f7f7;
+    transition: border-color 0.3s ease;
+    text-align: center; /* Centra el texto dentro de los inputs */
+}
+
+/* Efecto en los inputs cuando se enfocan */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus {
+    border-color: #1e88e5; /* Azul brillante */
+    background-color: #eaf6ff;
+    outline: none;
+}
+
+/* Estilo del botón de envío */
+input[type="submit"] {
+    width: 80%; /* El botón también ocupa el 80% */
+    padding: 12px;
+    background-color: #1e88e5; /* Azul brillante */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+input[type="submit"]:hover {
+    background-color: #1565c0; /* Azul oscuro */
+}
+
+/* Estilo del enlace para el inicio de sesión */
+.mensaje-registro {
+    text-align: center;
+    font-size: 0.9em; /* Reducir el tamaño del texto */
+    margin-top: 10px;
+    width: 100%;
+    color: #555;
+}
+
+.mensaje-registro a {
+    color: #1e88e5; /* Azul brillante */
+    text-decoration: none;
+}
+
+.mensaje-registro a:hover {
+    text-decoration: underline;
+}
+
+
+
+button {
+    width: 80%; /* Los botones ocupan el 80% del contenedor */
+    padding: 12px;
+    background-color: #1e88e5; /* Azul brillante */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 8px 0; /* Espaciado entre botones */
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+button:hover {
+    background-color: #1565c0; /* Azul oscuro */
+    transform: translateY(-2px); /* Efecto de elevar el botón al pasar el ratón */
+}
+
+/* Efecto cuando el botón es presionado */
+button:active {
+    transform: translateY(2px); /* Efecto de presionar el botón */
+}
+
+/* Estilo adicional para el último botón (Salir) */
+button:last-child {
+    background-color: #d32f2f; /* Rojo para el botón "Salir" */
+}
+
+button:last-child:hover {
+    background-color: #c2185b; /* Rojo oscuro al pasar el ratón */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 40px; /* Espacio entre las tablas */
+    display: block; /* Asegura que cada tabla se apile verticalmente */
+}
+
+/* Estilo de las celdas (th y td) */
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Fondo de los encabezados */
+th {
+    background-color: #1e88e5; /* Azul brillante */
+    color: rgb(53, 47, 47);
+}
+
+/* Filas pares con fondo gris claro */
+tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+/* Efecto de hover en filas */
+tr:hover {
+    background-color: #e1f5fe; /* Azul claro cuando el ratón pasa por encima */
+}
+
+/* Estilo para los encabezados h3 (encima de las tablas) */
+h3 {
+    text-align: center;
+    color: #1e88e5;
+    font-size: 1em;
+    margin-bottom: 10px; /* Espacio debajo del h3 */
+    display: block; /* Asegura que cada encabezado se coloque en una nueva línea */
+}
+
+/* Mensaje si no se encuentran datos */
+.no-datos {
+    text-align: center;
+    font-size: 1.2em;
+    color: #d32f2f; /* Rojo */
+}
+
+.tabli{
+    margin: 10px;
+}
+
+fieldset {
+    border: 2px solid #1e88e5;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+}
+
+/* Estilo de los legend (títulos del fieldset) */
+legend {
+    font-size: 1.4em;
+    color: #1e88e5;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+/* Estilos de los botones de radio */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Estilo de los radio buttons */
+input[type="radio"]:checked + label {
+    color: #1e88e5;
+    font-weight: bold;
+}
+
+/* Espaciado entre los botones de radio */
+div[id^="hipo_hiper_"] {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+/* Estilo para el texto de las opciones (HIPO / HIPÉR) */
+label {
+    font-size: 1em;
+    margin-right: 15px;
+    color: #333;
+}
+
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: white;
+    color: #333;
+    appearance: none; /* Quitar la apariencia predeterminada del navegador */
+    -webkit-appearance: none; /* Para Safari */
+    -moz-appearance: none; /* Para Firefox */
+}
+
+/* Efecto de foco en el select */
+select:focus {
+    border-color: #1e88e5;
+    outline: none;
+    box-shadow: 0 0 5px rgba(30, 136, 229, 0.5);
+}
+
+/* Estilo de las opciones dentro del select */
+option {
+    padding: 10px;
+    background-color: white;
+    color: #333;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+/* Cambiar el color de fondo de la opción seleccionada */
+option:checked {
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* Estilo al pasar el mouse sobre las opciones */
+option:hover {
+    background-color: #e1f5fe; /* Azul claro */
+    color: #1e88e5;
+}
+
+
+nav {
+    background-color: #0056b3; /* Azul más oscuro para el fondo */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la lista (ul) */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilo de cada ítem de la lista (li) */
+li {
+    margin: 0 25px; /* Espaciado entre los elementos */
+}
+
+/* Estilo de los enlaces (a) */
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover en los enlaces */
+a:hover {
+    background-color: #004080; /* Azul más oscuro al pasar el ratón */
+    transform: translateY(-3px); /* Da un pequeño efecto de elevación */
+}
+
+/* Efecto de foco para accesibilidad */
+a:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(0, 86, 179, 0.7);
+}
+
+span{
+    color: red;
+}
